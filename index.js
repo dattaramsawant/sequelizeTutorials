@@ -18,10 +18,18 @@ const User = sequelize.define('user',{
     }
 });
 
-User.sync()
-    .then((data)=>{
-        console.log('Table and model synced successfully')
-    })
-    .catch(error=>{
-        console.log('Error syncing the table and model.')
-    })
+// Create query
+// User.sync({alter:true})
+//     .then((data)=>{
+//         return User.create({
+//             username:"parkar",
+//             password:'12345',
+//             age:25
+//         })
+//     })
+//     .then(data=>{
+//         console.log('User added successfully')
+//     })
+//     .catch(error=>{
+//         console.log('Error syncing the table and model.')
+//     })
