@@ -20,7 +20,7 @@ const User = sequelize.define('user',{
 
 User.sync()
     .then((data)=>{
-        console.log('Table and model synced successfully.')
+        console.log('Table and model synced successfully')
     })
     .catch(error=>{
         console.log('Error syncing the table and model.')
